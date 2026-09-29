@@ -1,0 +1,232 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>
+        FitBuddy | Admin
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="/static/css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="topbar">
+
+    <div class="brand">
+        FitBuddy Admin
+    </div>
+
+    <nav>
+
+        <a href="/">
+            Home
+        </a>
+
+        <a href="/docs">
+            API Docs
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="container wide">
+
+
+<section class="hero compact">
+
+    <span class="eyebrow">
+        ADMIN DASHBOARD
+    </span>
+
+    <h1>
+        All registered users
+    </h1>
+
+    <p>
+        Review stored user information
+        and original/updated plan versions.
+    </p>
+
+</section>
+
+
+{% if users %}
+
+
+<div class="table-wrap card">
+
+<table>
+
+<thead>
+
+<tr>
+
+    <th>
+        User
+    </th>
+
+    <th>
+        Profile
+    </th>
+
+    <th>
+        Goal
+    </th>
+
+    <th>
+        Original
+    </th>
+
+    <th>
+        Updated
+    </th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+
+{% for user in users %}
+
+
+<tr>
+
+<td>
+
+    <strong>
+        {{ user.username }}
+    </strong>
+
+    <br>
+
+    <small>
+        {{ user.user_id }}
+    </small>
+
+</td>
+
+
+<td>
+
+    {{ user.age }} yrs
+
+    <br>
+
+    {{ user.weight }} kg
+
+    <br>
+
+    {{ user.intensity }}
+
+</td>
+
+
+<td>
+    {{ user.goal }}
+</td>
+
+
+<td>
+
+    <details>
+
+        <summary>
+            View
+        </summary>
+
+        <pre>
+{{ user.original_plan }}
+        </pre>
+
+    </details>
+
+</td>
+
+
+<td>
+
+
+{% if user.updated_plan %}
+
+<details>
+
+    <summary>
+        View
+    </summary>
+
+    <pre>
+{{ user.updated_plan }}
+    </pre>
+
+</details>
+
+
+{% else %}
+
+<span class="muted">
+    No update
+</span>
+
+{% endif %}
+
+
+</td>
+
+</tr>
+
+
+{% endfor %}
+
+
+</tbody>
+
+</table>
+
+</div>
+
+
+{% else %}
+
+
+<section class="card empty">
+
+    <h2>
+        No users yet
+    </h2>
+
+    <p>
+        Create a plan from the home page.
+    </p>
+
+</section>
+
+
+{% endif %}
+
+
+</main>
+
+</body>
+
+</html>

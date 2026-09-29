@@ -1,0 +1,223 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>
+        FitBuddy | Your Plan
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="/static/css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="topbar">
+
+    <div class="brand">
+        FitBuddy
+    </div>
+
+    <nav>
+
+        <a href="/">
+            New Plan
+        </a>
+
+        <a href="/view-all-users">
+            Admin
+        </a>
+
+        <a href="/docs">
+            API Docs
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="container">
+
+
+{% if error %}
+
+<div class="alert error">
+    {{ error }}
+</div>
+
+{% endif %}
+
+
+{% if user %}
+
+
+<section class="profile card">
+
+    <div>
+
+        <span class="eyebrow">
+            PERSONALIZED PLAN
+        </span>
+
+        <h1>
+            {{ user.username }}
+        </h1>
+
+        <p>
+            ID: {{ user.user_id }}
+        </p>
+
+    </div>
+
+
+    <div class="chips">
+
+        <span>
+            {{ user.goal }}
+        </span>
+
+        <span>
+            {{ user.intensity }} intensity
+        </span>
+
+        <span>
+            {{ user.age }} years
+        </span>
+
+    </div>
+
+</section>
+
+
+{% if updated %}
+
+<div class="alert success">
+
+    Your plan was updated using
+    the submitted feedback.
+
+</div>
+
+{% endif %}
+
+
+<section class="card">
+
+    <div class="section-heading">
+
+        <h2>
+
+            {% if updated %}
+
+                Updated 7-Day Plan
+
+            {% else %}
+
+                7-Day Workout Plan
+
+            {% endif %}
+
+        </h2>
+
+
+        <button
+            class="button secondary"
+            type="button"
+            onclick="copyPlan()"
+        >
+            Copy Plan
+        </button>
+
+    </div>
+
+
+    <pre id="plan">{{ workout_plan }}</pre>
+
+</section>
+
+
+<section class="card">
+
+    <h2>
+        Nutrition / Recovery Tip
+    </h2>
+
+    <p class="tip">
+        {{ nutrition_tip }}
+    </p>
+
+</section>
+
+
+<section class="card">
+
+    <h2>
+        Refine your plan
+    </h2>
+
+
+    <form
+        method="post"
+        action="/submit-feedback"
+    >
+
+        <input
+            type="hidden"
+            name="user_id"
+            value="{{ user.user_id }}"
+        >
+
+
+        <label>
+
+            Feedback
+
+            <textarea
+                name="feedback"
+                minlength="3"
+                maxlength="1000"
+                required
+                placeholder="Example: Make sessions shorter and add more mobility work."
+            ></textarea>
+
+        </label>
+
+
+        <button
+            class="button"
+            type="submit"
+        >
+            Update Plan
+        </button>
+
+    </form>
+
+</section>
+
+
+{% endif %}
+
+
+</main>
+
+
+<script src="/static/js/app.js"></script>
+
+</body>
+
+</html>
