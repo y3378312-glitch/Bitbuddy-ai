@@ -1,7 +1,7 @@
 # Phase 8: Project Demonstration
 
 ## Demonstration Deliverables
-- **Live Application URL:**http://127.0.0.1:8000
+- **Live Application URL:**
 - **Project Demonstration Video:** ]
 
 ## Video Walkthrough Outline
