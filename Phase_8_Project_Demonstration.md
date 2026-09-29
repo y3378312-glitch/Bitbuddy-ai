@@ -13,7 +13,7 @@
 
 
 - Date: 29 September 2026
-- Team ID: 06
+- Team ID: 04
 - Project Name: FitBuddy – AI Fitness Plan Generator using Gemini Models
 - Maximum Marks: 3 Marks
 
