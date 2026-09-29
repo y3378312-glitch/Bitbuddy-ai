@@ -14,10 +14,15 @@
 
  Phase 2: Requirement Analysis
 
-Date: 29 September 2026
-Team ID: 04
-Project Name: FitBuddy – AI Fitness Plan Generator using Gemini Models
-Maximum Marks: 3 Marks
+ .Date: 29 September 2026
+- Team ID: 04
+- Project Name: FitBuddy – AI Fitness Plan Generator using Gemini Models
+- Maximum Marks: 3 Marks
+
+---
+
+## Step 1: Brainstorm and Idea Listing
+
 | S.No | Team Member | Idea / Suggestion | Category | Group No. |
 |------|-------------|-------------------|----------|-----------|
 | 1 | Prabadevi.S | Multimodal receipt image parsing using Google Gemini 1.5 Flash API | AI Architecture & Vision | Group 04 |
