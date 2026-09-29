@@ -1,11 +1,11 @@
 # Phase 8: Project Demonstration
 
 ## Demonstration Deliverables
-- **Live Application URL:**
+- **Live Application URL:**http://127.0.0.1:8000
 - **Project Demonstration Video:** ]
 
 ## Video Walkthrough Outline
-1. **Introduction:** Presentation of team members and project title (*PocketSmart AI*).
+1. **Introduction:** Presentation of team members and project title (*BitBuddy-AI*).
 2. **Problem & Objective:** Challenges in manual expense recording and how automated vision AI solves them.
 3. **Architecture Overview:** High-level walkthrough of FastAPI, Google Gemini 1.5 multimodal parsing, and Render deployment.
 4. **Live Execution & Output:** Real-time demonstration uploading an expense receipt, generating structured breakdowns, and reviewing AI budget recommendations.
