@@ -3,9 +3,7 @@
 ## Local Setup Instructions
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/ponnurangamm21-wq/FitBudyy-AI/blob/main/Project_Phases/Phase_7_Project_Documentation.md]
-   
-
+  github.com/y3378312-glitch/Bitbuddy-ai/edit/main/Phase_7_Project_Documentation.md
 
 
   Phase 7: Project Documentation
