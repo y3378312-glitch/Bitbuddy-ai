@@ -9,18 +9,21 @@
 
 
 
+ Phase 5: Project Development
+
+
 - Date: 29 September 2026
-- Team ID: 06
+- Team ID: 04
 - Project Name: FitBuddy – AI Fitness Plan Generator using Gemini Models
 - Maximum Marks: 3 Marks
 
 ---
 
-# Phase 5: Project Development
+## Step 1: Brainstorm and Idea Listing
 
 | S.No | Team Member | Idea / Suggestion | Category | Group No. |
 |------|-------------|-------------------|----------|-----------|
-| 1 | Ponnurangam M| Multimodal receipt image parsing using Google Gemini 1.5 Flash API | AI Architecture & Vision | Group 06 |
-| 2 | Saran R| Automated line-item expense categorization and tax breakdown | Data Processing & Logic | Group 06 |
-| 3 | Sanjay Kumar  | Dynamic Jinja2 web interface for intuitive mobile and desktop uploads | Frontend & UI/UX | Group 06 |
-|4 |Vishnu S  | Dynamic Jinja2 web interface for intuitive mobile and desktop uploads | Frontend & UI/UX | Group 06 |
+| 1 | Prabadevi.S | Multimodal receipt image parsing using Google Gemini 1.5 Flash API | AI Architecture & Vision | Group 04 |
+| 2 | Yuvashree.S | Automated line-item expense categorization and tax breakdown | Data Processing & Logic | Group 04 |
+| 3 | Ranjani.A | Dynamic Jinja2 web interface for intuitive mobile and desktop uploads | Frontend & UI/UX | Group 04 |
+| 4 | Kanimozhi.K | Dynamic Jinja2 web interface for intuitive mobile and desktop uploads | Frontend & UI/UX | Group 04 |
