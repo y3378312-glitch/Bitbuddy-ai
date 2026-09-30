@@ -2,7 +2,7 @@
 
 ## Demonstration Deliverables
 - **Live Application URL:**http://127.0.0.1:8000
-- **Project Demonstration Video:** ]ttps://drive.google.com/file/d/13EXhE4KW2e8Yap3bAAt33aEz_mNL3ryW/view?usp=drivesdk
+- **Project Demonstration Video:** https://drive.google.com/file/d/1hShSu9ArB3nagEsV_hzwl6bSc_Kc3K_D/view?usp=drivesdk
 
 ## Video Walkthrough Outline
 1. **Introduction:** Presentation of team members and project title (*BitBuddy-AI*).
